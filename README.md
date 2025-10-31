@@ -2,10 +2,6 @@
 
 A clean, responsive personal portfolio website built with HTML, CSS, and JavaScript.
 
-## 🚀 Live Demo
-
-[View Live Portfolio](https://ngkokhua.github.io/html-css-js-portfolio)
-
 ## 📋 About
 
 This is a modern, fully responsive portfolio website designed to showcase personal projects, skills, and professional experience. The site features a clean design with smooth navigation and is optimized for all device sizes.
