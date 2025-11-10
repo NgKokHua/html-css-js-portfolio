@@ -2,11 +2,11 @@
 
 A clean, responsive personal portfolio website built with HTML, CSS, and JavaScript.
 
-## 📋 About
+## About
 
 This is a modern, fully responsive portfolio website designed to showcase personal projects, skills, and professional experience. The site features a clean design with smooth navigation and is optimized for all device sizes.
 
-## ✨ Features
+## Features
 
 - **Fully Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Interactive Navigation**: Smooth scrolling with hamburger menu for mobile
@@ -16,20 +16,20 @@ This is a modern, fully responsive portfolio website designed to showcase person
 - **Skills Display**: Visual representation of technical skills
 - **Professional Layout**: Organized sections for easy navigation
 
-## 🛠 Built With
+## Built With
 
 - **HTML5** - Structure and content
 - **CSS3** - Styling and responsive design
 - **JavaScript** - Interactive functionality
 - **GitHub Pages** - Hosting and deployment
 
-## 📱 Responsive Breakpoints
+## Responsive Breakpoints
 
 - Desktop: 1400px+
 - Tablet: 1200px - 1399px
 - Mobile: 600px and below
 
-## 🔧 Installation & Setup
+## Installation & Setup
 
 1. Clone the repository:
    ```bash
@@ -43,7 +43,7 @@ This is a modern, fully responsive portfolio website designed to showcase person
 
 3. Open `index.html` in your browser or use a live server
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 html-css-js-portfolio/
@@ -55,7 +55,7 @@ html-css-js-portfolio/
 └── README.md          # Project documentation
 ```
 
-## 🎨 Customization
+## Customization
 
 To customize this portfolio for your own use:
 
@@ -64,14 +64,14 @@ To customize this portfolio for your own use:
 3. Modify colors and fonts in `style.css`
 4. Adjust responsive breakpoints in `mediaqueries.css`
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome!
 
 ---
 
-⭐ If you found this helpful, please give it a star!
+If you found this helpful, please give it a star!
