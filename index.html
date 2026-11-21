@@ -4,7 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Kok Hua Ng | Software Engineer</title>
+    <meta name="description" content="Kok Hua Ng — Computer Science & Software Engineering student at the University of Washington. Software engineering, open source, and research on AI-generated security risks in OSS.">
+    <style>
+        #skills { position: relative; }
+        .details-container.experience-card { text-align: left; }
+        .experience-card h3 { margin-bottom: 0.25rem; }
+        .experience-meta { color: rgb(85,85,85); font-size: 0.95rem; margin-bottom: 0.75rem; }
+        .experience-card ul { padding-left: 1.25rem; color: rgb(53,53,53); }
+        .experience-card li { margin-bottom: 0.4rem; }
+        .project-desc { color: rgb(53,53,53); margin: 0 0.5rem 0.75rem; text-align: left; }
+        .project-tech { color: rgb(85,85,85); font-size: 0.9rem; margin: 0 0.5rem 1rem; }
+        .project-img.contain { object-fit: contain; background: #f5f5f5; }
+        @media screen and (max-width: 600px) {
+            section#experience .details-container,
+            section#projects .details-container { flex: 1 1 100%; max-width: none; }
+        }
+    </style>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -15,9 +31,10 @@
            <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-           </ul> 
+           </ul>
         </div>
     </nav>
     <nav id="hamburger-nav">
@@ -31,6 +48,7 @@
         <div class="menu-links">
              <li><a href="#about" onclick="toggleMenu()">About</a></li>
              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
@@ -41,9 +59,9 @@
             <img src="./assets/Profile-pic-1.jpg" alt="Kok Hua Ng profile picture"/>
         </div>
         <div class="section__text">
-            <p class="section__text__p1">Hello,I'm</p>
+            <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Kok Hua Ng</h1>
-            <p class="section__text__p2">University of washington CSSE major</p>
+            <p class="section__text__p2">Computer Science &amp; Software Engineering<br />University of Washington</p>
             <div class="btn-container">
                 <button 
                 class="btn btn-color-2" 
@@ -57,10 +75,10 @@
                 </button>
             </div>
             <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My linkedn profile"
+                <img src="./assets/linkedin.png" alt="My LinkedIn profile"
                 class="icon"
                 onclick="location.href='https://www.linkedin.com/in/kok-hua-ng'"/>
-                <img src="./assets/github.png" alt="My github profile"
+                <img src="./assets/github.png" alt="My GitHub profile"
                 class="icon"
                 onclick="location.href='https://github.com/NgKokHua'"/>
             </div>
@@ -72,7 +90,7 @@
         <div class="section-container">
             <div class="section__pic-container">
                 <img src="./assets/experience_photo1.jpg" 
-                alt="Profile picture"
+                alt="Kok Hua Ng"
                 class="about-pic"
                 />
             </div>
@@ -84,7 +102,7 @@
                         class="icon"
                         />
                         <h3>Experience</h3>
-                        <p>2+ years <br /> Math tutor in Bellevue College <br /> Self-learning programmer </p>
+                        <p>SWE Intern @ Pullscription <br /> Research Assistant @ UW CDSC <br /> Open-source contributor</p>
                     </div>
                     <div class="details-container">
                        <img src="./assets/education.png" 
@@ -92,11 +110,11 @@
                         class="icon"
                         />
                         <h3>Education</h3>
-                        <p>B.Sc. Computer Science and software engineering </p>
+                        <p>B.S. Computer Science &amp; Software Engineering <br /> University of Washington <br /> Expected June 2027</p>
                     </div>
                 </div>
                 <div class="text-container">
-                    <p>I’m an aspiring software developer currently pursuing my degree while teaching math and learning programming on my own. My experience balancing tutoring, academics, and coding projects has helped me build a strong foundation in problem-solving, self-discipline, and creative thinking. I’m passionate about growing into a full-time developer and creating projects that make everyday tasks easier.
+                    <p>I’m a Computer Science &amp; Software Engineering student at the University of Washington. I’ve built iOS features and backend endpoints as a software engineering intern, and I contribute to open source (OpenHospital). As an undergraduate research assistant with the UW Community Data Science Collective, I study AI-generated cybersecurity risks in open-source software, including how well AI-detection tools identify LLM-written bug reports. I also teach math and robotics, which keeps me sharp at explaining complex ideas clearly.
                     </p>
                 </div> 
              </div>
@@ -108,141 +126,159 @@
         />
     </section>
     <section id="experience">
-        <p class="section__text__p1">Explore My</p>
+        <p class="section__text__p1">Where I've Worked</p>
         <h1 class="title">Experience</h1>
         <div class="experience-details-container">
             <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>React</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                    </div>
+                <div class="details-container experience-card">
+                    <h3>Software Engineering Intern — Pullscription</h3>
+                    <p class="experience-meta">Los Angeles, CA · Jun 2024 – Sep 2024</p>
+                    <ul>
+                        <li>Built 10+ reusable SwiftUI components (custom buttons, collection views) for a consistent, responsive UI across screen sizes.</li>
+                        <li>Integrated REST API endpoints to display dynamic content on the iOS Explore page, including secure store authentication.</li>
+                        <li>Developed and tested backend endpoints for data retrieval, store communication, and error handling.</li>
+                    </ul>
                 </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Backend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>Java</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>Python</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article> 
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>C++</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" 
-                                 alt="experience icon"
-                                 class="icon"
-                            />  
-                            <div>
-                                <h3>SQL</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
+                <div class="details-container experience-card">
+                    <h3>Undergraduate Research Assistant — UW Community Data Science Collective</h3>
+                    <p class="experience-meta">Seattle, WA · Jun 2026 – Present</p>
+                    <ul>
+                        <li>Mixed-methods research on AI-generated cybersecurity risks in open-source software and how fabricated LLM bug reports burden maintainers.</li>
+                        <li>Built a dataset of real bug reports from the GitHub Advisory Database and GitHub API across 7,780+ repositories, split into pre/post-ChatGPT cohorts.</li>
+                        <li>Evaluated AI-detection tools against LLM-generated bug reports; findings contributed to a research poster presented at UW.</li>
+                    </ul>
                 </div>
-           </div>
+            </div>
+            <div class="about-containers">
+                <div class="details-container experience-card">
+                    <h3>Math Instructor &amp; Robotics Club TA — Xtatic</h3>
+                    <p class="experience-meta">Bothell, WA · Sep 2025 – Present</p>
+                    <ul>
+                        <li>Teach 20+ students algorithmic problem-solving and discrete math, adapting to diverse skill levels.</li>
+                    </ul>
+                </div>
+                <div class="details-container experience-card">
+                    <h3>Teaching Assistant — Bellevue College</h3>
+                    <p class="experience-meta">Bellevue, WA · Nov 2024 – Jun 2025</p>
+                    <ul>
+                        <li>Guided students through calculus, algebra, and statistics.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-          <img src="./assets/arrow.png"
+        <img src="./assets/arrow.png"
+             alt="Arrow icon"
+             class="icon arrow"
+             onclick="location.href='./#skills'"
+        />
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">Tools I Use</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>Python</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>Java</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>C++</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>JavaScript</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>SQL</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>Swift</h3></div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frameworks &amp; Tools</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>React</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>Node.js</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>SwiftUI</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>LiveKit</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>AWS</h3></div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon" />
+                            <div><h3>Git / GitHub</h3></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png"
              alt="Arrow icon" 
              class="icon arrow"
              onclick="location.href='./#projects'"
         />
     </section>
     <section id="projects">
-        <P class="section__text__p1">Browse My Recent</P>
+        <p class="section__text__p1">Things I've Built</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container"> 
             <div class="about-containers">
                 <div class="details-container color-container">
                     <div class="article-container">
+                        <img src="./assets/project-openhospital.svg"
+                            alt="OpenHospital open-source contributions"
+                            class="project-img contain"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Open Source: OpenHospital</h2>
+                    <p class="project-desc">Merged PR #2202 into openhospital-gui, fixing an i18n key typo and standardizing key naming across all locale bundles. Opened PR #771 in openhospital-ui, auditing 12 locale bundles and removing 44 orphaned i18n keys.</p>
+                    <p class="project-tech">Java · TypeScript · i18n · Git</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/informatici/openhospital-gui/pull/2202'">
+                            PR #2202
+                        </button>
+                        <button class="btn btn-color-2 project-btn"
+                                onclick="location.href='https://github.com/informatici/openhospital-ui/pull/771'">
+                            PR #771
+                        </button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
                         <img src="./assets/Project_1.JPG" 
-                            alt="Project 1"
+                            alt="Portfolio website screenshot"
                             class="project-img"
                         /> 
                     </div>
                     <h2 class="experience-sub-title project-title">HTML CSS JS Portfolio</h2>
+                    <p class="project-desc">This site: a fully responsive portfolio in vanilla HTML, CSS, and JavaScript with a mobile hamburger menu, deployed on Netlify.</p>
+                    <p class="project-tech">HTML5 · CSS3 · JavaScript · Netlify</p>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" 
                                 onclick="location.href='https://github.com/NgKokHua/html-css-js-portfolio'">
@@ -256,12 +292,14 @@
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/Project_2.jpg" 
-                            alt="Project 2"
+                        <img src="./assets/Project_3.PNG" 
+                            alt="File automation project"
                             class="project-img"
                         /> 
                     </div>
                     <h2 class="experience-sub-title project-title">File Automation Management</h2>
+                    <p class="project-desc">Real-time tool that watches a folder and auto-sorts new files into typed folders, with duplicate-name handling, permission-error resilience, timestamped logging, and size-based audio routing.</p>
+                    <p class="project-tech">Python · Watchdog · Logging</p>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" 
                                 onclick="location.href='https://github.com/NgKokHua/File-management-automation'">
@@ -275,18 +313,20 @@
                 </div>
                 <div class="details-container color-container">
                     <div class="article-container">
-                        <img src="./assets/Project_3.PNG" 
-                            alt="Project 3"
+                        <img src="./assets/Project_2.jpg" 
+                            alt="AI voice assistant project"
                             class="project-img"
                         /> 
                     </div>
                     <h2 class="experience-sub-title project-title">AI Voice Assistant</h2>
+                    <p class="project-desc">Real-time voice assistant chaining speech-to-text, an LLM, and text-to-speech over WebSocket, with voice activity detection and async function calling to get/set temperatures across 5 smart-home zones.</p>
+                    <p class="project-tech">Python · LiveKit Agents · OpenAI API · Silero VAD</p>
                     <div class="btn-container">
                         <button class="btn btn-color-2 project-btn" 
                                 onclick="location.href='https://github.com/NgKokHua/AI-Voice-Assistant'">
                             GitHub
                         </button>
-                       ,<!-- <button class="btn btn-color-2 project-btn" 
+                       <!-- <button class="btn btn-color-2 project-btn" 
                                 onclick="location.href='https://github.com/NgKokHua/AI-Voice-Assistant#readme'">
                             Live Demo
                         </button> -->
@@ -297,7 +337,7 @@
         <img src="./assets/arrow.png"
              alt="Arrow icon" 
              class="icon arrow"
-             onclick="location.href='./#projects'"
+             onclick="location.href='./#contact'"
         />
     </section>
     <section id="contact">
@@ -320,6 +360,14 @@
                 <p><a href="https://www.linkedin.com/in/kok-hua-ng">LinkedIn</a>
                 </p>
             </div>
+            <div class="contact-info-container">
+                <img src="./assets/github.png"
+                    alt="GitHub icon"
+                    class="icon contact-icon"
+                />
+                <p><a href="https://github.com/NgKokHua">GitHub</a>
+                </p>
+            </div>
         </div>
     </section>
     <footer>
@@ -328,12 +376,13 @@
                <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
               </ul>  
             </div>
         </nav>
-        <p>Copyright &#169; 2025 Kok Hua Ng. All Rights Reserved.</p>
+        <p>Copyright &#169; 2026 Kok Hua Ng. All Rights Reserved.</p>
     </footer>
     <script src="script.js"></script>
 </body>
